@@ -237,8 +237,8 @@ img {
     margin: 0 auto;
 }
 .info_main .view iframe{
-    width: 850px;
-    height: 480px;
+    width: 48%;
+    height: 20vw;
     border-radius: 30px;
 }
 .info_main .review{
