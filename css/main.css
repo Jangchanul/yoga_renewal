@@ -259,19 +259,19 @@ img {
     height: 40px;
 }
 .star .full{
-    background: url(../img/star_full.jpg);
+    background: url(../img/star_full.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .star .half{
-    background: url(../img/star_half.jpg);
+    background: url(../img/star_half.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
 }
 .star .none{
-    background: url(../img/star.jpg);
+    background: url(../img/star.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
