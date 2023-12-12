@@ -137,7 +137,7 @@ img {
     margin-bottom: 10rem;
 }
 .info_main .head {
-    background: url("../img/info_head.png");
+    background: url("../img/info_head.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,19 +259,19 @@ img {
     height: 40px;
 }
 .star .full{
-    background: url(../img/star_full.png);
+    background: url(../img/star_full.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .star .half{
-    background: url(../img/star_half.png);
+    background: url(../img/star_half.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
 }
 .star .none{
-    background: url(../img/star.png);
+    background: url(../img/star.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
