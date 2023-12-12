@@ -9514,8 +9514,9 @@ p,
 .back-to-top {
   position: fixed;
   display: none;
+  width: 100px;
   right: 30px;
-  bottom: 30px;
+  bottom: 50%;
   z-index: 11;
   animation: action 1s infinite alternate;
 }
