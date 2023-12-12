@@ -1,0 +1,306 @@
+.navbar-brand h1 {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.buy_ticket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(154,87,237,1) 0%, rgba(247,92,250,1) 100%);
+    border: 0;
+    width: 820px;
+    border-radius: 46px;
+    font-size: 44px;
+    color: #FFF;
+    margin: 0 auto;
+}
+.ticket {
+    width: 54px;
+    margin-left: 12px;
+}
+.login {
+    display: flex;
+    align-items: center;
+}
+.login .btn_join {
+    background: linear-gradient(90deg, rgba(154,87,237,1) 0%, rgba(77,95,254,1) 100%);
+    color: #FFF;
+    border-radius: 40px;
+}
+.schedule {
+    width: 86%;
+    margin: 0 auto;
+}
+.schedule .month {
+    width: 300px;
+}
+.schedule .month .swiper-slide {
+    text-align: center;
+}
+.schedule .month h3 {
+    font-size: 55px;
+}
+.schedule .month .button-next {
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.schedule .month .button-prev {
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.schedule .week {
+    background-color: #5B35B1;
+    color: #FFF;
+    font-size: 28px;
+    text-align: center;
+}
+.schedule .week > div {
+    padding: 22px 0;
+}
+.schedule .day {
+    font-size: 55px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+.schedule .day ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-bottom: 16px;
+}
+.schedule .day li {
+    width: calc(100%/7);
+    padding: 30px 0;
+    cursor: pointer;
+    position: relative;
+}
+.schedule .day li:hover {
+    background-color: #F3F1FA;
+}
+.schedule .day li.on {
+    background-color: #F3F1FA;
+}
+.schedule .day li.on::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 0;
+    position: absolute;
+    bottom: -19px;
+    left: calc(50% - 10px);
+    border-bottom: 20px solid;
+    border-left: 13px solid rgba(0, 0, 0, 0);
+    border-right: 13px solid rgba(0, 0, 0, 0);
+    color: #F3F1FA;
+    transform: rotate(-180deg);
+
+}
+.schedule .mySwiper2 .button-next {
+    width: 15px;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.schedule .mySwiper2 .button-prev {
+    width: 15px;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.info_main{
+    background-color: #F3F1FA;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 10rem;
+}
+.info_main .head {
+    background: url("../img/info_head.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 20rem;
+    height: 340px;
+    transform: translateY(-15px);
+}
+.info_main .head p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 2rem 0;
+}
+.info_main .profile{
+    position: relative;
+    text-align: center;
+    width: 92%;
+    margin: 0 auto;
+}
+.info_main .profile figure{
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1rem solid #FFF;
+    position: absolute;
+    top: -180px;
+    left: 0;
+}
+.info_main .profile .btn_Class{
+    background: linear-gradient(90deg, rgba(154,87,237,1) 0%, rgba(77,95,254,1) 100%);
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 280px;
+    padding: 20px 0;
+    border: 0;
+    letter-spacing: .2rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
+.info_main .profile figcaption{
+    display: inline-block;
+    padding: 2rem 0;
+    text-align: start;
+    margin: 0 auto;
+}
+.info_main .profile figcaption strong{
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+}
+.info_main .profile figcaption small{
+    font-size: 20px;
+}
+.info_main .profile .tag{
+    font-size: 28px;
+    color: #5D5D5D;
+}
+.info_main .list{
+    width: 92%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+.info_main .list>li{
+    margin-bottom: 4rem;
+}
+.info_main .list>li .line{
+    background-color: #9C9C9C;
+    height: 4px;
+    margin-bottom: 2rem;
+}
+.info_main .list>li .line span{
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-color: #5B35B1;
+}
+.info_main .list>li>h3{
+    width: 92%;
+    margin: 0 auto 30px;
+}
+.info_main .list>li>p{
+    width: 92%;
+    margin: 0 auto;
+    font-size: 24px;
+    white-space: pre-line;
+}
+.info_main .view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    margin: 0 auto;
+}
+.info_main .view iframe{
+    width: 850px;
+    height: 480px;
+    border-radius: 30px;
+}
+.info_main .review{
+    width: 92%;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 0;
+}
+.info_main .review>li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.info_main .star span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.star .full{
+    background: url(../img/star_full.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.star .half{
+    background: url(../img/star_half.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.star .none{
+    background: url(../img/star.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.yoga_list{
+    width: 86%;
+    margin: 0 auto;
+}
+.yoga_list>li{
+    margin-bottom: 5rem;
+}
+.yoga_list>li h3{
+    margin-bottom: 2rem;
+}
+.yoga_list>li>ul{
+    display: flex;
+    align-items: center;
+}
+.yoga_list>li>ul>li{
+    width: 32%;
+    margin-left: 2%;
+}
+.yoga_list>li>ul>li:first-child{
+    margin-left: 0;
+}
+.yoga_list>li>ul>li figure{
+    margin-bottom: 2rem;
+}
+.yoga_list>li>ul>li figcaption{
+    text-align: center;
+    font-size: 2rem;
+}
