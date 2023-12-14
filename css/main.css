@@ -382,6 +382,9 @@
         padding: 3.333vw 0;
         font-size: 2rem;
     }
+    .info_main .review>li>p{
+        font-size: 1.2rem;
+    }
 }
 @media (max-width: 560px){
     .buy_ticket{
@@ -392,5 +395,14 @@
     }
     .jumbotron{
         word-break: keep-all;
+    }
+    .footer p{
+        font-size: 1rem;
+    }
+    .info_main .view iframe{
+        border-radius: 8px;
+    }
+    .info_main .list>li>p{
+        font-size: 1.2rem;
     }
 }
