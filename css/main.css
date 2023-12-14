@@ -55,6 +55,8 @@
 }
 .schedule .week > div {
     padding: 22px 0;
+    margin: 0 !important;
+    width: calc(100%/7) !important;
 }
 .schedule .day {
     font-size: 55px;
@@ -134,7 +136,6 @@
 }
 .info_main .profile{
     position: relative;
-    text-align: center;
     width: 92%;
     margin: 0 auto;
 }
@@ -167,7 +168,7 @@
     display: inline-block;
     padding: 2rem 0;
     text-align: start;
-    margin: 0 auto;
+    margin-left: 400px;
 }
 .info_main .profile figcaption strong{
     font-size: 45px;
@@ -210,6 +211,7 @@
     margin: 0 auto;
     font-size: 24px;
     white-space: pre-line;
+    word-break: keep-all;
 }
 .info_main .view{
     display: flex;
@@ -217,11 +219,13 @@
     justify-content: space-between;
     width: 92%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 .info_main .view iframe{
     width: 48%;
     height: 20vw;
     border-radius: 30px;
+    margin-bottom: 1rem;
 }
 .info_main .review{
     width: 92%;
@@ -300,15 +304,21 @@
 }
 @media (max-width: 1500px){
     .info_main .review>li{
-        align-items: flex-start;
+        font-size: 1rem;
         flex-wrap: wrap;
-        flex-direction: column;
+    }
+    .info_main .review>li p{
+        margin-bottom: 0;
+    }
+    .info_main .star span{
+        width: 20px;
+        height: 20px;
     }
 }
 @media (max-width: 1200px){
     .info_main .profile figure{
-        width: 20vw;
-        height: 20vw;
+        width: 35vw;
+        height: 35vw;
         border: 10px solid #FFF;
     }
     .info_main .profile .btn_Class{
@@ -336,14 +346,15 @@
     .yoga_list>li>ul>li figcaption{
         font-size: 1.5rem;
     }
-    .ft_box{
-        width: 100% !important;
+    .info_main .profile figure{
+        width: 25vw;
+        height: 25vw;
     }
-    .footer .col-md-6.left{
-        max-width: 100% !important;
+    .info_main .profile figcaption strong{
+        font-size: 2em;
     }
-    .footer .right{
-        display: none;
+    .info_main .profile .tag{
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 768px){
@@ -366,8 +377,8 @@
         font-size: 1rem;
     }
     .info_main .star span{
-        width: 5vw;
-        height: 5vw;
+        width: 1rem;
+        height: 1rem;
     }
     .yoga_list>li>ul>li figcaption{
         font-size: 1rem;
@@ -383,7 +394,45 @@
         font-size: 2rem;
     }
     .info_main .review>li>p{
-        font-size: 1.2rem;
+        font-size: 0.75rem;
+    }
+    .info_main .list{
+        padding: 2rem 0;
+    }
+    .info_main .list>li>p{
+        font-size: 1rem;
+    }
+    .t_list>.tcard{
+        width: 50%;
+    }
+    .team .team-text h5{
+        font-size: 1rem;
+    }
+    .team .team-text span{
+        font-size: 0.6rem;
+    }
+    .jumbotron .container{
+        padding: 0 !important;
+    }
+    .schedule .week > div{
+        font-size: 1.5rem;
+    }
+    .info_main .view{
+        flex-wrap: wrap;
+    }
+    .info_main .view iframe{
+        width: 100%;
+        height: 40vw;
+        margin-bottom: 3.333vw;
+    }
+    .info_main .list>li{
+        margin-bottom: 2rem;
+    }
+    .info_main{
+        margin-bottom: 3rem;
+    }
+    .yoga_list>li{
+        margin-bottom: 2rem;
     }
 }
 @media (max-width: 560px){
@@ -396,13 +445,27 @@
     .jumbotron{
         word-break: keep-all;
     }
-    .footer p{
-        font-size: 1rem;
-    }
     .info_main .view iframe{
         border-radius: 8px;
     }
     .info_main .list>li>p{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    .schedule .profile figcaption{
+        margin: 0 auto !important;
+        padding-top: 5rem;
+        text-align: center;
+    }
+    .mpr figcaption{
+        padding: 0 !important;
+    }
+    .info_main .profile .tag{
+        font-size: 0.75rem;
+    }
+    .schedule .mySwiper2 .button-next{
+        display: none;
+    }
+    .schedule .mySwiper2 .button-prev{
+        display: none;
     }
 }

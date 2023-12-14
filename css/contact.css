@@ -1,6 +1,7 @@
 .jumbotron{
     background: url(../img/banner_contact.png);
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 8rem 0;
     margin: 0;
 }
@@ -76,5 +77,14 @@
     .bt_box .btn{
         width: 86%;
         font-size: 1.5rem;
+    }
+    .jumbotron{
+        padding: 1rem 0;
+    }
+    .contact{
+        padding: 2rem 0;
+    }
+    .footer{
+        margin: 0 !important;
     }
 }

@@ -1,0 +1,205 @@
+.jumbotron{
+    margin-bottom: 0 !important;
+}
+.jumbotron h1{
+    margin: 0 !important;
+}
+.footer{
+    margin-top: 0 !important;
+}
+.calendar{
+    background-color: #F6F7FB;
+    padding: 5rem 0;
+}
+.calendar .date-wrap{
+    width: 86%;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+}
+.calendar .date-month{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.calendar .ym{
+    display: flex;
+    align-items: center;
+}
+.calendar .ym span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.calendar .ym .mm{
+    color: #21293B;
+    font-size: 45px;
+}
+.calendar .ym .yy{
+    font-size: 45px;
+    color: #5B35B1;
+}
+.calendar .ym .y-line{
+    display: block;
+    background-color: #E2E2EA;
+    height: 30px;
+    width: 4px;
+    margin: 0 2rem;
+}
+.calendar .x-line{
+    width: 60%;
+    height: 4px;
+    background-color: #E2E2EA;
+}
+.calendar .button_wrap button{
+    background: none;
+    border: 0;
+    width: 90px;
+    height: 80px;
+}
+.calendar table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+.calendar th{
+    background-color: #E7E2F5;
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: #21293B;
+}
+.calendar td{
+    width: calc(100% / 7);
+    font-size: 2.5rem;
+    color: #5D5D5D;
+    vertical-align: top;
+    padding: 3rem 0;
+}
+.calendar td.on{
+    background-color: #F3F1FA;
+    border-radius: 30px;
+}
+.calendar td small{
+    display: block;
+}
+.calendar td strong{
+    display: block;
+    color: #000;
+}
+.calendar td span{
+    display: block;
+    width: 50%;
+    font-size: 70%;
+    margin: 0 auto;
+    color: #FFF;
+    background: linear-gradient(90deg, rgba(154,87,237,1) 0%, rgba(77,95,254,1) 100%);
+    border-radius: 30px;
+}
+@media (max-width: 1500px){
+    .calendar .x-line{
+        width: 40%;
+    }
+}
+@media (max-width: 1400px){
+    .calendar th{
+        font-size: 1.5rem;
+    }
+    .calendar td{
+        padding: 1rem 0;
+        font-size: 1.6rem;
+    }
+    .calendar td small{
+        font-size: 60%;
+    }
+    .calendar td strong{
+        font-size: 80%;
+    }
+    .calendar td span{
+        width: 80%;
+        font-size: 60%;
+    }
+}
+@media (max-width: 992px){
+    .calendar .x-line{
+        width: 30%;
+    }
+    .calendar .ym .mm{
+        font-size: 2rem;
+    }
+    .calendar .ym .yy{
+        font-size: 2rem;
+    }
+    .calendar .button_wrap button{
+        width: 8vw;
+        height: 7vw;
+    }
+    .calendar th{
+        font-size: 1.2rem;
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 768px){
+    .calendar td{
+        padding: 0;
+        overflow: hidden;
+        font-size: 1.2rem;
+    }
+    .calendar td.on{
+        border-radius: 8px;
+    }
+    .calendar td strong{
+        font-size: 1rem;
+    }
+    .calendar td span{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+@media (max-width: 680px){
+    .calendar{
+        padding: 2rem 0;
+    }
+    .calendar .date-wrap{
+        width: 92%;
+        padding: 2rem 1rem;
+    }
+    .calendar .date-month{
+        margin-bottom: 16px;
+    }
+    .calendar .ym .mm{
+        font-size: 4.444vw;
+    }
+    .calendar .ym .yy{
+        font-size: 4.444vw;
+    }
+    .calendar .ym .y-line{
+        margin: 0 2.222vw;
+        width: 2px;
+        height: 12px;
+    }
+    .calendar .x-line{
+        height: 2px;
+    }
+    .calendar .button_wrap button{
+        width: 10vw;
+    }
+    .calendar th{
+        padding: 3.333vw 0;
+        font-size: 2.222vw;
+    }
+    .calendar td{
+        font-size: 3.333vw;
+    }
+    .calendar td small{
+        font-size: 2.222vw;
+    }
+    .calendar td strong{
+        font-size: 2.222vw;
+    }
+    .calendar td.on{
+        border-radius: 4px;
+    }
+}

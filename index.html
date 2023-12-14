@@ -81,7 +81,7 @@
         <div class="container text-center py-5">
             <h1 class="text-white mb-4">간편하게 시작해보세요.</h1>
             <h1 class="text-white display-3 mb-5">슬기로운 일상 요가생활</h1>
-            <button class="buy_ticket">
+            <button class="buy_ticket" type="button" onclick="location.href='price.html'">
                 <b>티켓 구매하러 가기</b>
                 <i class="ticket"><img src="./img/ticket.png" alt=""></i>
             </button>
@@ -95,8 +95,8 @@
             <div class="text-center pb-2">
                 <h1 class="mb-4">TEACHER INFO</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
+            <div class="row t_list">
+                <div class="col-lg-3 col-md-6 tcard">
                     <div class="team card position-relative overflow-hidden border-0 mb-5">
                         <img class="card-img-top" src="img/teacher_01.jpg" alt="">
                         <div class="card-body text-center p-0">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 tcard">
                     <div class="team card position-relative overflow-hidden border-0 mb-5">
                         <img class="card-img-top" src="img/teacher_02.jpg" alt="">
                         <div class="card-body text-center p-0">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 tcard">
                     <div class="team card position-relative overflow-hidden border-0 mb-5">
                         <img class="card-img-top" src="img/teacher_03.jpg" alt="">
                         <div class="card-body text-center p-0">
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 tcard">
                     <div class="team card position-relative overflow-hidden border-0 mb-5">
                         <img class="card-img-top" src="img/teacher_04.jpg" alt="">
                         <div class="card-body text-center p-0">
@@ -288,7 +288,7 @@
             <div class="head">
                 <p>림프순환 요가 테라피 2:00 PM</p>
             </div>
-            <div class="profile">
+            <div class="profile mpr">
                 <figure><img src="img/profile.jpg" alt=""></figure>
                 <figcaption>
                     <p><strong>신서원</strong><small>@yogajokoon</small></p>
@@ -299,7 +299,7 @@
                         <span>#전임교사</span>
                     </p>
                 </figcaption>
-                <button type="button" class="btn_Class">수업예약</button>
+                <button type="button" class="btn_Class" onclick="location.href='service.html'">수업예약</button>
             </div>
             <ul class="list">
                 <li>
@@ -421,25 +421,21 @@
     </ul>
     
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5 ">
-            <div class="col-lg-10 col-md-6 ft_box">
-                <div class="row footer">
-                    <div class="col-md-6 mb-5 left">
-                        <h3 class="text-white mb-4">FunnyLABs</h3>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>인천광역시 연수구 컨벤시아대로 165, 송도 포스코 타워 26층 사업자등록번호 : 202-02-66432</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>070-4194-4559</p>
-                        <p><i class="fa fa-envelope mr-2"></i>ioplanet00@gmail.com</p>
-                        <p><i class="fa fa-user mr-2"></i>개인정보책임자: 최지운(ioplanet@funnytech21.com)</p>
-                        <p>www.yogajokoon.com</p>
-                    </div>
-                    <div class="col-md-6 mb-5 right">
-                        <div class="d-flex flex-column ft_link">
-                            <a class="mb-3 link1" href="#">선생님 문의하기</a>
-                            <a class="mb-3 link2" href="#">기업/단체 문의하기</a>
-                            <a class="mb-3 link3" href="#">카카오톡 문의하기</a>
-                        </div>
-                    </div>
+    <div class="footer container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row ft_box">
+            <div class="left">
+                <h3 class="text-white mb-4">FunnyLABs</h3>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>인천광역시 연수구 컨벤시아대로 165, 송도 포스코 타워 26층 사업자등록번호 : 202-02-66432</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>070-4194-4559</p>
+                <p><i class="fa fa-envelope mr-2"></i>ioplanet00@gmail.com</p>
+                <p><i class="fa fa-user mr-2"></i>개인정보책임자: 최지운(ioplanet@funnytech21.com)</p>
+                <p>www.yogajokoon.com</p>
+            </div>
+            <div class="right">
+                <div class="ft_link">
+                    <a class="mb-3 link1" href="#">선생님 문의하기</a>
+                    <a class="mb-3 link2" href="#">기업/단체 문의하기</a>
+                    <a class="mb-3 link3" href="#">카카오톡 문의하기</a>
                 </div>
             </div>
         </div>
@@ -449,7 +445,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg back-to-top"><img src="img/buy_ticket.png" alt=""></a>
+    <a href="price.html" class="btn btn-lg back-to-top"><img src="img/buy_ticket.png" alt=""></a>
 
 
     <!-- JavaScript Libraries -->

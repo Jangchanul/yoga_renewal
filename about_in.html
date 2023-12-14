@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="utf-8">
-    <title>FASTER - Logistics Company Website Template</title>
+    <title>요가조쿤</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -23,7 +23,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about_in.css">
 </head>
 
 <body>
@@ -54,15 +55,16 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
                     <a href="price.html" class="nav-item nav-link">티켓구매</a>
-                    <a href="about.html" class="nav-item nav-link">선생님정보</a>
+                    <a href="about.html" class="nav-item nav-link active">선생님정보</a>
                     <a href="service.html" class="nav-item nav-link">예약하기</a>
                     <a href="replay.html" class="nav-item nav-link">다시보기</a>
-                    <a href="contact.html" class="nav-item nav-link active">문의하기</a>
+                    <a href="contact.html" class="nav-item nav-link">문의하기</a>
                 </div>
                 <div class="login">
                     <a href="login.html" class="btn py-2 px-4 d-none d-lg-block">로그인</a>
                     <a href="join.html" class="btn_join py-2 px-4 d-none d-lg-block">회원가입</a>
                 </div>
+                
             </div>
         </nav>
     </div>
@@ -70,52 +72,79 @@
 
 
     <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid mb-5">
         <div class="container text-center py-3">
-            <h1 class="text-white mb-4">문의하기</h1>
         </div>
     </div>
     <!-- Header End -->
 
-
-    <!-- Contact Start -->
-    <div class="contact">
-        <div class="contact-form">
-            <div id="success"></div>
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                <div class="control-group">
-                    <h3>회사명</h3>
-                    <input type="text" class="form-control border-0 p-4" id="name" 
-                        required="required" data-validation-required-message="Please enter your name" />
-                </div>
-                <div class="control-group">
-                    <h3>담당자명</h3>
-                    <input type="text" class="form-control border-0 p-4" id="name" 
-                        required="required" data-validation-required-message="Please enter your name" />
-                </div>
-                <div class="control-group">
-                    <h3>이메일</h3>
-                    <input type="email" class="form-control border-0 p-4" id="email" 
-                        required="required" data-validation-required-message="Please enter your email" />
-                </div>
-                <div class="control-group">
-                    <h3>연락처</h3>
-                    <input type="text" class="form-control border-0 p-4" id="subject" 
-                        required="required" data-validation-required-message="Please enter a subject" />
-                </div>
-                <div class="control-group">
-                    <h3>문의내용</h3>
-                    <textarea class="form-control border-0 py-3 px-4" rows="3" id="message"
-                        required="required"
-                        data-validation-required-message="Please enter your message"></textarea>
-                </div>
-                <div class="bt_box">
-                    <button class="btn" type="submit" id="sendMessageButton">문의하기</button>
-                </div>
-            </form>
-        </div>
+    <div class="schedule">
+          <div class="info_main">
+            <div class="profile">
+                <figure class="ab_pr"><img src="img/profile.jpg" alt=""></figure>
+                <figcaption>
+                    <p><strong>신서원</strong><small>@yogajokoon</small></p>
+                    <p class="tag">
+                        <span>#마음챙김요가</span>
+                        <span>#15년차</span>
+                        <span>#요가학박사</span>
+                        <span>#전임교사</span>
+                    </p>
+                </figcaption>
+            </div>
+            <ul class="list">
+                <li>
+                    <div class="line"><span></span></div>
+                    <h3>학력 및 경력</h3>
+                    <ul class="t_li">
+                        <li>- 서울불교대학원대학교 대학원 (박사과정) 수료 Bodhi school of yoga</li>
+                        <li>- 천안시 여성 문화센터 요가 천안시종합사회복지관 요가</li>
+                        <li>- 충청남도 교육청 평생교육원 요가</li>
+                        <li>- 보령도서관 요가</li>
+                        <li>- Bodhi school of yoga 에서 국제요가자격증 취득 및 인턴쉽</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="line"><span></span></div>
+                    <h3>온라인 VOD</h3>
+                    <div class="view">
+                        <iframe src="https://www.youtube.com/embed/8t8Xgl0HuYM?si=CyowehWkm1f17s8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/D3yExRi7EME?si=RIlQq3ONGTxCpQ1j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/8t8Xgl0HuYM?si=CyowehWkm1f17s8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/D3yExRi7EME?si=RIlQq3ONGTxCpQ1j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div class="line"><span></span></div>
+                    <h3>수업리뷰</h3>
+                    <ul class="review">
+                        <li>
+                            <p>손일락 ㅣ 림프순환 요가 테라피 (화) 2:00 PM</p>
+                            <p>너무 유익한 수업이었습니다</p>
+                            <div class="star">
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="half"></span>
+                                <span class="none"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>손일락 ㅣ 림프순환 요가 테라피 (화) 2:00 PM</p>
+                            <p>너무 유익한 수업이었습니다</p>
+                            <div class="star">
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="half"></span>
+                                <span class="none"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
     </div>
-    <!-- Contact End -->
 
 
     <!-- Footer Start -->

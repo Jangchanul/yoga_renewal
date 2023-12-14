@@ -9743,11 +9743,18 @@ img {
 ul{
   list-style-type: none;
 }
+.ft_box .left{
+  width: 48%;
+}
+.ft_box .right{
+  width: 48%;
+}
 .ft_link>a{
+  display: block;
   width: 350px;
   font-size: 24px;
   border-radius: 30px;
-  margin-bottom: 24px;
+  margin: 0 auto 30px;
   padding: 16px 0;
   box-sizing: border-box;
   text-align: center;
@@ -9775,4 +9782,49 @@ ul{
 }
 .bg-purple{
   background-color: #392472 !important;
+}
+@media (max-width: 768px){
+  .footer{
+    padding: 2rem 0 !important;
+  }
+  .footer .ft_box{
+    width: 92%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .footer .left{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .footer .right{
+    width: 100%;
+  }
+  .footer h3{
+    font-size: 2rem;
+  }
+  .footer .left p{
+    font-size: 1rem;
+  }
+  .ft_link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ft_link>a{
+    width: 30%;
+    font-size: 3.333vw;
+    padding: .5rem 1rem;
+    word-break: keep-all;
+  }
+  .back-to-top{
+    width: 80px;
+  }
+}
+@media (max-width: 460px){
+  .btn-social{
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    font-size: 0.9rem;
+  }
 }
