@@ -83,183 +83,46 @@
     <!-- Navbar End -->
 
     <section class="mypage">
-        <div class="info">
-            <div class="user">
-                <h3>
-                    <strong>회원정보</strong>
-                    <a href="user_edit.html">회원정보 수정</a>
-                </h3>
-                <div class="wrap">
-                    <ul>
-                        <li>
-                            <figure>
-                                <input type="file" id="file">
-                                <label for="file"><img src="img/user_w.png" alt=""></label>
-                            </figure>
-                            <figcaption>손일락<small>초심자</small></figcaption>        
-                        </li>
-                        <li>
-                            <table>
-                                <tr>
-                                    <th>연락처</th>
-                                    <td>010-1234-5678</td>
-                                </tr>
-                                <tr>
-                                    <th>키</th>
-                                    <td>180cm</td>
-                                </tr>
-                                <tr>
-                                    <th>몸무게</th>
-                                    <td>72kg</td>
-                                </tr>
-                            </table>
-                        </li>
-                        <li>
-                            <p class="flex">
-                                <span>현재까지</span>
-                                <span><strong>2회</strong> 참여</span>
-                                <input type="button" value="이용기록">
-                            </p>
-                        </li>
-                    </ul>
-                    <div class="bg_box"></div>
-                </div>
-            </div>
-            <div class="right">
-                <div class="m_ticket">
-                    <h3>남은 수업 티켓</h3>
-                    <div class="wrap">
-                        <div class="bg_box"></div>
-                        <ol>
-                            <li>
-                                <div class="icon1"><img src="img/ticket2.png" alt=""></div>
-                                <p>잔여태켓</p>
-                                <p class="st">3회</p>
-                            </li>
-                            <li>
-                                <div class="icon2"><img src="img/calendar.png" alt=""></div>
-                                <p>잔여기간</p>
-                                <p class="st">
-                                    40일
-                                    <small>(2023-12-12 까지)</small>
-                                </p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="re_class">
-                    <h3>예약된 수업</h3>
-                    <div class="wrap">
-                        <div class="text_l">
-                            <p><strong>신서원</strong>선생님</p>
-                            <p>림프순환 요가 테라피</p>
-                            <p>11-15 (수) 2:00 PM</p>
-                            <input type="button" value="수업대기">
-                        </div>
-                        <div class="img"><img src="img/profile.jpg" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="review">
-            <div class="line"><span></span></div>
-            <h3>
-                수업리뷰
-                <a href="review_write.html">리뷰쓰러가기</a>
-            </h3>
-            <ul>
-                <li>
-                    <p>손일락 ㅣ 림프순환 요가 테라피 (화) 2:00 PM</p>
-                    <p>너무 유익한 수업이었습니다</p>
-                    <div class="star">
-                        <span class="full"></span>
-                        <span class="full"></span>
-                        <span class="full"></span>
-                        <span class="half"></span>
-                        <span class="none"></span>
-                    </div>
-                </li>
-                <li>
-                    <p>손일락 ㅣ 림프순환 요가 테라피 (화) 2:00 PM</p>
-                    <p>너무 유익한 수업이었습니다</p>
-                    <div class="star">
-                        <span class="full"></span>
-                        <span class="full"></span>
-                        <span class="full"></span>
-                        <span class="half"></span>
-                        <span class="none"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="re_class par">
-            <div class="line"><span></span></div>
-            <h3>참여 수업</h3>
-            <div class="wrap">
-                <div class="text_l">
-                    <p><strong>신서원</strong>선생님</p>
-                    <p>림프순환 요가 테라피</p>
-                    <p>11-15 (수) 2:00 PM</p>
-                    <input type="button" value="다시보기">
-                </div>
-                <div class="img"><img src="img/profile.jpg" alt=""></div>
-            </div>
-            <div class="no_list">
-                <p>아직 참여한 수업이 없습니다.</p>
-                <input type="button" value="예약하러 가기">
-            </div>
-        </div>
-        <div class="view_list">
-            <div class="line"><span></span></div>
-            <h3>VOD 시청기록</h3>
-            <div class="no_list">
-                <p>아직 시청한 VOD가 없습니다.</p>
-            </div>
-            <ul>
-                <li><img src="img/no_view.png" alt=""></li>
-                <li><img src="img/no_view.png" alt=""></li>
-                <li><img src="img/no_view.png" alt=""></li>
-            </ul>
-        </div>
+        
         <div class="use_record">
             <div class="line"><span></span></div>
-            <h3>이용기록</h3>
+            <h3>리뷰작성</h3>
+            <div class="re_class">
+                <div class="wrap">
+                    <div class="text_l">
+                        <p><strong>신서원</strong>선생님</p>
+                        <p>림프순환 요가 테라피</p>
+                        <p>11-15 (수) 2:00 PM</p>
+                        <input type="button" value="리뷰쓰기" onclick="location.href='review_write2.html'">
+                    </div>
+                    <div class="img"><img src="img/profile.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="re_class">
+                <div class="wrap">
+                    <div class="text_l">
+                        <p><strong>신서원</strong>선생님</p>
+                        <p>림프순환 요가 테라피</p>
+                        <p>11-15 (수) 2:00 PM</p>
+                        <input type="button" value="리뷰쓰기" onclick="location.href='review_write2.html'">
+                    </div>
+                    <div class="img"><img src="img/profile.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="re_class">
+                <div class="wrap">
+                    <div class="text_l">
+                        <p><strong>신서원</strong>선생님</p>
+                        <p>림프순환 요가 테라피</p>
+                        <p>11-15 (수) 2:00 PM</p>
+                        <input type="button" value="리뷰쓰기" onclick="location.href='review_write2.html'">
+                    </div>
+                    <div class="img"><img src="img/profile.jpg" alt=""></div>
+                </div>
+            </div>
             <div class="no_list">
-                <p>아직 참여한 수업이 없습니다.</p>
+                <p>리뷰를 작성할 수업이 없습니다.</p>
                 <input type="button" value="예약하러 가기">
-            </div>
-            <div class="re_class">
-                <div class="wrap">
-                    <div class="text_l">
-                        <p><strong>신서원</strong>선생님</p>
-                        <p>림프순환 요가 테라피</p>
-                        <p>11-15 (수) 2:00 PM</p>
-                        <input type="button" value="다시보기">
-                    </div>
-                    <div class="img"><img src="img/profile.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="re_class">
-                <div class="wrap">
-                    <div class="text_l">
-                        <p><strong>신서원</strong>선생님</p>
-                        <p>림프순환 요가 테라피</p>
-                        <p>11-15 (수) 2:00 PM</p>
-                        <input type="button" value="다시보기">
-                    </div>
-                    <div class="img"><img src="img/profile.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="re_class">
-                <div class="wrap">
-                    <div class="text_l">
-                        <p><strong>신서원</strong>선생님</p>
-                        <p>림프순환 요가 테라피</p>
-                        <p>11-15 (수) 2:00 PM</p>
-                        <input type="button" value="다시보기">
-                    </div>
-                    <div class="img"><img src="img/profile.jpg" alt=""></div>
-                </div>
             </div>
         </div>
     </section>

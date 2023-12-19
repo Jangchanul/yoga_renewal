@@ -21,6 +21,13 @@
             $(".day li").removeClass();
             $(this).addClass("on");
         });
+        $(".review_write .btn_o").click(function(){
+            $(".popup.rw").fadeIn();
+        });
+        $(".popup.rw input").click(function(){
+            $(".rw").fadeOut();
+            location.href='review_write.html'
+        });
     });
     
     
