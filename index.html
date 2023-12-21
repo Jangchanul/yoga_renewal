@@ -595,15 +595,15 @@
                 <h3>심신 안정 힐링 요가</h3>
                 <ul>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                 </ul>
@@ -612,15 +612,15 @@
                 <h3>유연성 강화 아쉬탕가</h3>
                 <ul>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                 </ul>
@@ -629,15 +629,15 @@
                 <h3>초심자를 위한 반야사 요가</h3>
                 <ul>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                 </ul>
@@ -646,15 +646,15 @@
                 <h3>심화 클래스 하타 요가</h3>
                 <ul>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                     <li>
-                        <figure><img src="img/no_view.jpg" alt=""></figure>
+                        <figure><img src="img/no_view.png" alt=""></figure>
                         <figcaption>하체 순환 테라피1</figcaption>
                     </li>
                 </ul>
@@ -724,7 +724,17 @@
                     delay: 2000,
                     disableOnInteraction: false,
                 },
-                loop: true
+                loop: true,
+                breakpoints: {
+                    320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                    },
+                    640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                    }
+                }
             });
             var swiper2 = new Swiper(".mySwiper2", {
                 spaceBetween: 10,

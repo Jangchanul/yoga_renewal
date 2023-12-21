@@ -28,6 +28,35 @@
             $(".rw").fadeOut();
             location.href='review_write.html'
         });
+        $(".box").click(function(){
+            $(".box").removeClass("on");
+            $(this).toggleClass("on");
+        });
+        $(".tag_list .bt_plus").click(function(){
+            $(".tag_select").fadeIn();
+        });
+        $(".tag_select .bt_close").click(function(){
+            $(".tag_select").fadeOut();
+        });
+        
+        $(".t_page .plus_box .bt_plus").click(function(){
+            $(".career").append("<div class='add'><button class='minus' type='button'><img src='img/bt_minus.png'></button><input type='text' value=''></div>")
+        });
+        $(".t_page .minus").on("click",function(){
+            $(this).parent().remove();
+        });
+        $(".vod_all .bt_add").on("click",function(){
+            $(".add_box").fadeIn();
+        });
+        $(".vod_all .bt_add2").on("click",function(){
+            $(".add_box").fadeOut();
+        });
+        $(".vod_all .bt_close").on("click",function(){
+            $(".add_box").fadeOut();
+        });
+        $(".class_add td").on("click",function(){
+            $(this).toggleClass("active");
+        });
     });
     
     
