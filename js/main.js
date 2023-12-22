@@ -58,9 +58,7 @@
             $(this).toggleClass("active");
         });
         
-        $(".popup input").on("click",function(){
-            $(".pop_box").fadeOut();
-        });
+        
     });
     
     
