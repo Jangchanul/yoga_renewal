@@ -527,15 +527,7 @@
     }
     
 }
-@media (max-width: 560px){
-    .info_main .profile figure.ab_pr{
-        width: 35vw;
-        height: 35vw;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -20vw;
-    }
-}
+
 @media (max-width: 768px){
     .ab_h{
         padding: 2rem 0;
@@ -1929,6 +1921,7 @@
     background-color: #FFF;
     padding: 50px;
     display: none;
+    z-index: 10;
 }
 .vod_all .add_box .bt_close{
     width: 50px;
@@ -1940,8 +1933,8 @@
     top: 12px;
 }
 .vod_all .add_box .area{
-    width: 43vw;
-    height: 25vw;
+    width: 840px;
+    height: 500px;
     margin: 0 auto 24px;
 }
 .vod_all .add_box .area input{
@@ -2051,18 +2044,16 @@
     box-sizing: border-box;
 }
 .class_add2 .time{
-    width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .class_add2 .time select{
-    width: 45%;
+    width: 150px;
     height: 80px;
     border: 1px solid #8970CE;
     border-radius: 15px;
-    padding: 0 24px;
-    font-size: 45px;
+    font-size: 40px;
     box-sizing: border-box;
     text-align: center;
     font-weight: bold;
@@ -2070,7 +2061,7 @@
     -moz-appearance:none;
     appearance:none;
     background: url(../img/arrow_d.png);
-    background-position: 85% 50%;
+    background-position: 90% 50%;
     background-repeat: no-repeat;
     background-size: 24px;
     outline: none;
@@ -2079,6 +2070,7 @@
 .class_add2 .time span{
     font-size: 45px;
     font-weight: bold;
+    padding: 0 12px;
 }
 .class_add2 textarea{
     border: 1px solid #8970CE;
@@ -2107,6 +2099,9 @@
 }
 .class_add2 .view figcaption{
     font-size: 1.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .class_add .bt_box{
     display: flex;
@@ -2117,6 +2112,7 @@
     padding: 24px 0;
     font-size: 24px;
     border-radius: 15px;
+    border: 0;
 }
 .class_add .bt_box .btn_x{
     border: 1px solid #C6C6C6;
@@ -2179,6 +2175,10 @@
         width: 100%;
         margin-bottom: 1rem;
     }
+    .class_add2 .time select{
+        width: 120px;
+        font-size: 30px;
+    }
 }
 @media (max-width: 992px){
     .join .container{
@@ -2203,8 +2203,61 @@
         left: -2vw;
         bottom: -2vw;
     }
+    .class_add2 .li1 input{
+        font-size: 18px;
+        height: 60px;
+    }
+    .class_add2 .time select{
+        font-size: 24px;
+        height: 60px;
+        width: 100px;
+        background-size: 16px;
+    }
+    .class_add2 textarea{
+        font-size: 18px;
+    }
+    .no_list p{
+        font-size: 30px;
+    }
+    .no_list input{
+        font-size: 2rem;
+    }
+    .class_add .bt_box button{
+        width: 40%;
+    }
+    .vod_all .add_box .bt_close{
+        width: 40px;
+    }
+    .vod_all .add_box{
+        padding: 50px 30px;
+    }
+    .vod_all .add_box .area{
+        width: 600px;
+        height: 340px;
+    }
+    .vod_all .add_box .flex p{
+        font-size: 24px;
+    }
+    .vod_all .add_box .title input{
+        font-size: 18px;
+    }
+    .vod_all .add_box .v_tag select{
+        font-size: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .vod_all .add_box .bt_add2{
+        font-size: 18px;
+    }
 }
 @media (max-width: 768px){
+    .class_add2 .li1{
+        flex-wrap: wrap;
+    }
+    .class_add2 .li1 input{
+        width: 100%;
+        margin-bottom: 12px;
+    }
     .info_main .profile figure.ab_pr{
         top: -10vw;
     }
@@ -2244,8 +2297,18 @@
     .join .container .bt_box button{
         padding: 18px 0;
     }
+    .class_add2 .time span{
+        font-size: 30px;
+    }
 }
 @media (max-width: 680px){
+    .vod_all .add_box{
+        width: 92%;
+    }
+    .vod_all .add_box .area{
+        width: 100%;
+        height: 42vw;
+    }
     .t_page .n_adr{
         flex-wrap: wrap;
     }
@@ -2459,6 +2522,49 @@
     }
 }
 @media (max-width: 512px){
+    .vod_all .add_box{
+        padding: 20px;
+    }
+    .vod_all .add_box .bt_close{
+        width: 16px;
+        top: 4px;
+        right: 4px;
+        padding: 0;
+    }
+    .vod_all .add_box .area{
+        margin: 0 auto 12px;
+    }
+    .vod_all .add_box .flex{
+        flex-wrap: wrap;
+    }
+    .vod_all .add_box .title{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .vod_all .add_box .v_tag{
+        width: 100%;
+    }
+    .vod_all .add_box .flex p{
+        font-size: 14px;
+    }
+    .vod_all .add_box .title input{
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+    .vod_all .add_box .v_tag select{
+        font-size: 14px;
+        padding: 8px 12px;
+        background-size: 14px;
+        border-radius: 8px;
+    }
+    .vod_all .add_box .bt_add2{
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+    .ab_s .info_main{
+        width: 92%;
+    }
     .t_page .profile figure.ab_pr{
         top: -20vw;
     }
@@ -2540,6 +2646,57 @@
         border-radius: 8px;
         height: auto;
     }
+    .class_add2{
+        width: 92%;
+        padding: 24px;
+        margin: 1rem auto;
+    }
+    .class_add2 .line{
+        margin-bottom: 12px;
+    }
+    .class_add2 .li1 input{
+        height: 40px;
+        font-size: 16px;
+        padding: 4px 12px;
+    }
+    .class_add2 .time select{
+        height: 40px;
+        font-size: 18px;
+    }
+    .class_add2 li{
+        margin-bottom: 24px;
+    }
+    .class_add2 h3{
+        font-size: 18px;
+    }
+    .class_add2 textarea{
+        padding: 12px;
+        font-size: 14px;
+        height: 40vw;
+    }
+    .class_add2 .li3 .no_list{
+        padding: 12px;
+    }
+    .no_list p{
+        font-size: 16px;
+    }
+    .no_list input{
+        font-size: 18px;
+        padding: 4px 24px;
+    }
+    .class_add2 .view figcaption{
+        font-size: 14px;
+    }
+    .class_add .bt_box button{
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    .t_page .view figcaption{
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }
 .team-text span{
    text-overflow: ellipsis;
@@ -2580,6 +2737,39 @@
         font-size: 16px;
         padding: 12px 0;
     }
+    .yoga_list>li>ul>li figcaption{
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .login_form .wrap .flex{
+        flex-wrap: wrap;
+    }
+    .login_form .wrap .flex input{
+        width: 100%;
+    }
+    .login_form .wrap .flex button{
+        width: auto;
+        padding: 8px 12px;
+        margin-top: 12px;
+        margin-left: auto;
+        font-size: 14px;
+    }
+    .login_form .bt_box2 button{
+        padding: 8px 0;
+        font-size: 1rem;
+    }
+    .login_form .wrap input{
+        padding: 8px 12px;
+    }
+    .info_main .profile figure{
+        width: 30vw;
+        height: 30vw;
+    }
+    .class_add td{
+        border-radius: 8px;
+    }
 }
 .jumbotron{
     position: relative;
@@ -2602,4 +2792,13 @@
 }
 .pop_box{
     display: none;
+}
+@media (max-width: 560px){
+    .info_main .profile figure.ab_pr{
+        width: 35vw;
+        height: 35vw;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -20vw;
+    }
 }
