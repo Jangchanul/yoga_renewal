@@ -649,6 +649,7 @@
     color: #5D5D5D;
     vertical-align: top;
     padding: 3rem 0;
+    cursor: pointer;
 }
 .calendar td.on{
     background-color: #F3F1FA;
@@ -2575,13 +2576,24 @@
 }
 @media (max-width: 1200px){
     .popup{
-        width: 700px;
+        width: 86%;
         padding: 30px 0;
     }
     .popup figcaption{
         font-size: 2rem;
     }
     .popup input{
-
+        width: 40%;
+        font-size: 1.2rem;
+        padding: 20px 0;
+    }
+}
+@media (max-width: 512px){
+    .popup figcaption{
+        font-size: 24px;
+    }
+    .popup input{
+        font-size: 16px;
+        padding: 12px 0;
     }
 }
