@@ -828,7 +828,7 @@
 .price .box>p strong{
     font-size: 3.75rem;
 }
-.price input[name='tic']{
+.price input[type='radio']{
     display: none;
 }
 .price input[name='tic']:checked+label{
@@ -2564,4 +2564,15 @@
    display: -webkit-box;
    -webkit-line-clamp: 2;
    -webkit-box-orient: vertical
+}
+.no_ticket input{
+    width: 300px;
+}
+.no_ticket .buy{
+    background-color: #5B35B1;
+    color: #FFF;
+    margin-left: 24px;
+}
+@media (max-width: 1200px){
+
 }
