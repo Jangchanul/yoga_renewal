@@ -144,6 +144,7 @@
     position: absolute;
     top: -180px;
     left: 0;
+    z-index: 2;
 }
 .info_main .profile figure img{
     border-radius: 100%;
@@ -477,8 +478,6 @@
     }
 }
 .abi_h{
-    background: url(../img/info_head.jpg);
-    background-size: cover;
     padding: 8rem 2rem;
     margin: 0 !important;
 }
@@ -537,11 +536,6 @@
         top: -20vw;
     }
 }
-.ab_h{
-    background: url(../img/banner_about.png);
-    background-size: cover;
-    padding: 5rem 2rem;
-}
 @media (max-width: 768px){
     .ab_h{
         padding: 2rem 0;
@@ -565,9 +559,6 @@
     .logo{
         width: 2rem;
         height: 2rem;
-    }
-    .navbar-toggler{
-        padding: ;
     }
 }
 .ser_h{
@@ -776,10 +767,6 @@
         border-radius: 4px;
     }
 }
-.pr_h{
-    background: url(../img/banner_price.png);
-    background-size: cover;
-}
 .price .round{
     background-color: #5B35B1;
     border-radius: 100%;
@@ -920,9 +907,6 @@
     
 }
 .con_h{
-    background: url(../img/banner_contact.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 8rem 0;
     margin: 0;
 }
@@ -2596,4 +2580,14 @@
         font-size: 16px;
         padding: 12px 0;
     }
+}
+.jumbotron{
+    position: relative;
+    z-index: 1;
+}
+.jumbotron .h_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }

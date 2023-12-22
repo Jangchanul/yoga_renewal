@@ -72,6 +72,7 @@
 
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid mb-5 ser_h">
+        <img src="img/header.jpg" alt="" class="h_bg">
         <div class="container text-center py-3">
             <h1 class="text-white display-3 mb-5">수업 예약하기</h1>
         </div>
@@ -233,6 +234,14 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(function(){
+            $("#table-month span").on("click",function(){
+                $(".reserve").fadeIn();
+            });
+        });
+        
+    </script>
 </body>
 
 </html>
