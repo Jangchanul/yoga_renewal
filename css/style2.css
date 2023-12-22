@@ -831,10 +831,10 @@
 .price input[type='radio']{
     display: none;
 }
-.price input[name='tic']:checked+label{
+.price input[type='radio']:checked+label{
     border: 1px solid #8970CE;
 }
-.price input[name='tic']:checked+label .round{
+.price input[type='radio']:checked+label .round{
     background-color: #8970CE;
 }
 .price label{
@@ -2574,5 +2574,14 @@
     margin-left: 24px;
 }
 @media (max-width: 1200px){
+    .popup{
+        width: 700px;
+        padding: 30px 0;
+    }
+    .popup figcaption{
+        font-size: 2rem;
+    }
+    .popup input{
 
+    }
 }
