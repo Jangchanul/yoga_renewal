@@ -1662,7 +1662,6 @@
     margin-left: 1rem;
 }
 .popup{
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1673,6 +1672,7 @@
     background-color: #FFF;
     padding: 70px 0;
     text-align: center;
+    z-index: 4;
 }
 .popup figure{
     width: 90px;
@@ -2590,4 +2590,16 @@
     top: 0;
     left: 0;
     z-index: -1;
+}
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+.pop_box{
+    display: none;
 }
