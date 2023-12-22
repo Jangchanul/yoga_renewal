@@ -57,6 +57,12 @@
         $(".class_add td").on("click",function(){
             $(this).toggleClass("active");
         });
+        $("#table-month td").on("click",function(){
+            $(".reserve").fadeIn();
+        });
+        $(".popup input").on("click",function(){
+            $(".popup").fadeOut();
+        });
     });
     
     
