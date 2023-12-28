@@ -1309,17 +1309,41 @@
 }
 .mypage{
     background-color: #F6F7FB;
-    padding: 60px 0;
-}
-.mypage .info{
-    width: 86%;
-    margin: 0 auto 80px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
+.mypage nav{
+    background-color: #5B35B1;
+    width: 20%;
+}
+.mypage nav ul{
+    padding: 60px 0;
+    text-align: end;
+}
+.mypage nav li{
+    display: inline-block;
+    padding:  16px 70px 16px 100px;
+    margin-bottom: 10px;
+    text-align: end;
+    font-weight: bold;
+}
+.mypage nav li.active{
+    background-color: #FFF;
+    border-radius: 30px 0 0 30px;
+}
+.mypage nav li.active a{
+    color: #5B35B1;
+}
+.mypage nav li a{
+    color: #FFF;
+    font-size: 26px;
+    white-space: nowrap;
+}
+.mypage .m_container{
+    width: 80%;
+    padding: 60px;
 }
 .mypage .user{
-    width: 29%;
+    margin-bottom: 30px;
 }
 .mypage .user h3{
     display: flex;
@@ -1336,36 +1360,24 @@
 .mypage .user .wrap{
     background-color: #FFF;
     border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    padding: 30px 0;
-    z-index: 1;
+    display: flex;
+    align-items: center;
 }
-.mypage .bg_box{
-    background-color: #8970CE;
+.mypage .user .wrap .left{
+    background-color: #E7E2F5;
+    width: 40%;
+    padding: 60px 0;
 }
-.mypage .user .bg_box{
-    width: 100%;
-    height: 12.5rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.mypage .user .wrap .right{
+    width: 60%;
 }
 .mypage .user .wrap ul{
     width: 92%;
     margin: 0 auto;
 }
-.mypage .user .wrap li{
-    border-bottom: 1px solid #707070;
-    margin-bottom: 30px;
-}
-.mypage .user .wrap li:last-child{
-    border: 0;
-}
 .mypage .user figure{
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 300px;
+    height: 300px;
     margin: 0 auto 30px;
     border-radius: 100%;
     border: 10px solid #FFF;
@@ -1392,16 +1404,25 @@
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
-    color: #000;
+    color: #5D5D5D;
+    font-weight: bold;
+}
+.mypage .user figcaption small{
+    padding-left: 12px;
 }
 .mypage .user table{
-    width: 100%;
-    margin-bottom: 30px;
-    border-spacing: 10px;
+    width: 86%;
+    margin: 0 auto 20px;
+    border-spacing: 20px;
     border-collapse: separate;
     font-size: 1.5vw;
+    border-bottom: 1px solid #000;
 }
-.mypage .user .flex{
+.mypage .user .right .flex{
+    width: 86%;
+    margin: 0 auto;
+}
+.mypage .flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1409,19 +1430,59 @@
 .mypage .user p.flex{
     font-size: 1.5vw;
 }
+.mypage .user p.flex span{
+    padding: 0 20px;
+    font-weight: bold;
+}
 .mypage .user p.flex strong{
-    font-size: 2.8125rem;
+    font-size: 3rem;
     color: #000;
+    padding-right: 24px;
 }
-.mypage .user p.flex input{
-    border-radius: 15px;
-    border: 1px solid #707070;
-    background-color: #FFF;
-    padding: 10px 20px;
-    font-size: 1.25rem;
+.mypage .bg_box{
+    background-color: #8970CE;
 }
-.mypage .right{
-    width: 69%;
+.mypage .under a{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 24px;
+    white-space: nowrap;
+}
+.mypage .under button{
+    border: 0;
+    background: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 24px;
+    white-space: nowrap;
+}
+.bot_banner{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.bot_banner img{
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mypage .m_class{
+    width: 75%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.mypage .m_class .review{
+    width: 100%;
+}
+.mypage .m_class .re_class{
+    margin-bottom: 60px;
+}
+.mypage .m_class .review li{
+    justify-content: space-around;
 }
 .mypage .m_ticket{
     margin-bottom: 60px;
@@ -1483,9 +1544,11 @@
 }
 .mypage .re_class .text_l{
     font-size: 2rem;
+    word-break: keep-all;
 }
 .mypage .re_class .text_l strong{
     font-size: 2.8125rem;
+    padding-right: 24px;
 }
 .mypage .re_class .text_l input{
     border-radius: 40px;
@@ -1522,7 +1585,7 @@
     justify-content: space-between;
     margin-bottom: 3rem;
 }
-.mypage .review h3 a{
+.mypage h3 a{
     color: #707070;
     font-size: 80%;
     text-decoration: underline;
@@ -1532,6 +1595,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    word-break: keep-all;
 }
 .review li p{
     margin-bottom: 0;
@@ -1552,26 +1616,36 @@
     margin-bottom: 80px;
 }
 .mypage .view_list{
-    width: 86%;
-    margin: 0 auto 80px;
+    width: 76%;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 .mypage .view_list ul{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+.mypage .view_list ul li img{
+    margin-bottom: 12px;
+}
 .mypage .view_list ul li{
     width: 32%;
+    font-size: 24px;
+    text-align: center;
 }
 .mypage .use_record{
-    width: 86%;
+    width: 70%;
     margin: 0 auto;
+    padding: 60px 0;
 }
-.mypage .use_record .re_class{
+.mypage .re_class{
     margin-bottom: 2rem;
 }
-.mypage .use_record .re_class .wrap{
+.mypage .re_class .wrap{
     justify-content: space-around;
+    border-radius: 15px;
+    border: 1px solid #c6c6c6;
 }
 .no_list{
     background-color: #FFF;
@@ -2123,6 +2197,9 @@
     color: #FFF;
     margin-left: 24px;
 }
+.mypage .star{
+    white-space: nowrap;
+}
 @media (max-width: 1500px){
     .mypage .user .flex{
         flex-wrap: wrap;
@@ -2143,6 +2220,11 @@
     }
     .t_page .ab_pr label{
         width: 60px;
+    }
+    .mypage nav li{
+        display: block;
+        padding: 16px 0;
+        text-align: center;
     }
 }
 @media (max-width: 1300px){
@@ -2179,8 +2261,35 @@
         width: 120px;
         font-size: 30px;
     }
+    .mypage .user figure{
+        width: 200px;
+        height: 200px;
+    }
 }
 @media (max-width: 992px){
+    .mypage .under button{
+        font-size: 16px;
+    }
+    .mypage .under a{
+        font-size: 16px;
+    }
+    .mypage .user .wrap{
+        flex-wrap: wrap;
+    }
+    .mypage .user .wrap .left{
+        width: 100%;
+    }
+    .mypage .user .wrap .right{
+        width: 100%;
+        padding: 30px 0;
+    }
+    .mypage nav li a{
+        font-size: 18px;
+        
+    }
+    .mypage nav li.active{
+        border-radius: 0;
+    }
     .join .container{
         padding: 3rem;
     }
@@ -2251,6 +2360,65 @@
     }
 }
 @media (max-width: 768px){
+    .mypage .view_list{
+        width: 92%;
+        padding: 24px 0;
+    }
+    .mypage .view_list ul li{
+        font-size: 16px;
+    }
+    .mypage .view_list ul li p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .mypage .m_class{
+        width: 92%;
+        padding: 24px 0;
+    }
+    .mypage .use_record{
+        width: 92%;
+        padding: 24px 0;
+    }
+    .mypage .m_container{
+        width: 92%;
+        margin: 0 auto;
+        padding: 24px 0;
+    }
+    .mypage{
+        display: block;
+    }
+    .mypage nav{
+        width: 100%;
+    }
+    .mypage nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+        width: 92%;
+        margin: 0 auto;
+    }
+    .mypage nav ul li{
+        width: 23%;
+        margin: 0;
+        padding: 12px 0;
+    }
+    .mypage nav ul li.active{
+        border-radius: 30px;
+    }
+    .mypage nav ul li a{
+        font-size: 12px;
+    }
+    .mypage .user .wrap .left{
+        padding: 30px 0;
+    }
+    .mypage .user table td{
+        white-space: nowrap;
+    }
+    .mypage .user table th{
+        white-space: nowrap;
+    }
     .class_add2 .li1{
         flex-wrap: wrap;
     }
@@ -2730,6 +2898,48 @@
     }
 }
 @media (max-width: 512px){
+    .bot_banner{
+        height: 100px;
+    }
+    .bot_banner img{
+        height: 100%;
+    }
+    .mypage .under>div:nth-child(2){
+        text-align: end;
+    }
+    .mypage .under button{
+        font-size: 14px;
+        margin-left: 4px;
+    }
+    .mypage .under a{
+        font-size: 14px;
+        margin-right: 4px;
+    }
+    .mypage h3{
+        font-size: 18px;
+    }
+    .mypage .user h3 a{
+        font-size: 14px;
+    }
+    .mypage .user figcaption{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .mypage .user p.flex{
+        font-size: 1rem;
+    }
+    .mypage .user p.flex strong{
+        font-size: 2rem;
+    }
+    .mypage .user table{
+        font-size: 1rem;
+    }
+    .mypage nav li.active{
+        padding: 4px 8px;
+    }
+    .mypage nav li a{
+        font-size: 14px;
+    }
     .popup figcaption{
         font-size: 24px;
     }
