@@ -1320,23 +1320,21 @@
     text-align: end;
 }
 .mypage nav li{
-    display: inline-block;
-    padding:  16px 70px 16px 100px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     text-align: end;
-    font-weight: bold;
-}
-.mypage nav li.active{
-    background-color: #FFF;
-    border-radius: 30px 0 0 30px;
 }
 .mypage nav li.active a{
     color: #5B35B1;
+    background-color: #FFF;
+    border-radius: 30px 0 0 30px;
 }
 .mypage nav li a{
+    display: inline-block;
     color: #FFF;
     font-size: 26px;
     white-space: nowrap;
+    padding:  16px 70px 16px 100px;
+    font-weight: bold;
 }
 .mypage .m_container{
     width: 80%;
@@ -1835,8 +1833,8 @@
     align-items: center;
 }
 .t_page .tag input{
-    font-size: 24px;
-    width: 700px;
+    font-size: 18px;
+    width: 500px;
 }
 .t_page .tag_list{
     position: relative;
@@ -1848,7 +1846,7 @@
     background-color: #8970CE;
     border-radius: 15px;
     color: #FFF;
-    font-size: 28px;
+    font-size: 18px;
     height: 50px;
     line-height: 50px;
     padding: 0 24px;
@@ -1874,8 +1872,8 @@
     width: 40px;
     border: 0;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 4px;
+    right: 4px;
     outline: none;
 }
 .t_page .tag_select ul{
@@ -1889,7 +1887,7 @@
     border-radius: 30px;
     background-color: #8970CE;
     color: #FFF;
-    font-size: 28px;
+    font-size: 18px;
     padding: 12px 24px;
     width: 30%;
     margin-left: 5%;
@@ -2222,9 +2220,12 @@
         width: 60px;
     }
     .mypage nav li{
-        display: block;
         padding: 16px 0;
         text-align: center;
+    }
+    .mypage nav li a{
+        display: block;
+        padding: 16px 0;
     }
 }
 @media (max-width: 1300px){
@@ -2402,13 +2403,14 @@
     .mypage nav ul li{
         width: 23%;
         margin: 0;
-        padding: 12px 0;
+        padding: 0;
     }
-    .mypage nav ul li.active{
-        border-radius: 30px;
+    .mypage nav ul li.active a{
+        border-radius: 0;
     }
     .mypage nav ul li a{
-        font-size: 12px;
+        font-size: 14px;
+        padding: 8px 0;
     }
     .mypage .user .wrap .left{
         padding: 30px 0;
@@ -3010,5 +3012,78 @@
         left: 50%;
         transform: translateX(-50%);
         top: -20vw;
+    }
+}
+.t_my{
+    display: flex;
+
+}
+.t_my .my_side{
+    width: 20%;
+    background-color: #5B35B1;
+}
+.t_my .my_side ul{
+    text-align: end;
+    padding: 60px 0;
+}
+.t_my .my_side li{
+    margin-bottom: 12px;
+}
+.t_my .my_side li.active a{
+    color: #5B35B1;
+    background-color: #FFF;
+    border-radius: 30px 0 0 30px;
+}
+.t_my .my_side a{
+    display: inline-block;
+    color: #FFF;
+    font-size: 24px;
+    padding: 16px 70px 16px 100px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.t_my section{
+    width: 80%;
+}
+@media (max-width: 1500px){
+    .t_my .my_side a{
+        display: block;
+        padding: 16px 0;
+        text-align: center;
+    }
+    .t_my .my_side li.active a{
+        border-radius: 0;
+    }
+}
+@media (max-width: 768px){
+    .t_my{
+        flex-wrap: wrap;
+    }
+    .t_my .my_side{
+        width: 100%;
+    }
+    .t_my>section{
+        width: 100%;
+    }
+    .t_my .my_side ul{
+        width: 92%;
+        padding: 12px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .t_my .my_side li{
+        width: 20%;
+        margin-bottom: 0;
+    }
+    .t_my .my_side a{
+        font-size: 16px;
+        padding: 8px 0;
+    }
+}
+@media (max-width: 512px){
+    .t_my .my_side a{
+        font-size: 14px;
+        padding: 4px 0;
     }
 }
