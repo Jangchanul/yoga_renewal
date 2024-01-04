@@ -539,11 +539,15 @@
     .t_list>.tcard{
         width: 50%;
     }
-    .team .team-text h5{
+    .team .team-text h5 strong{
         font-size: 1rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .team .team-text span{
         font-size: 0.5rem;
+        word-break: keep-all;
     }
     .navbar-brand h1{
         font-size: 1.2rem;
@@ -619,6 +623,7 @@
     text-align: center;
     border-spacing: 10px;
     border-collapse: separate;
+    table-layout: fixed;
 }
 .calendar th{
     background-color: #E7E2F5;
@@ -633,6 +638,7 @@
     vertical-align: top;
     padding: 3rem 0;
     cursor: pointer;
+    
 }
 .calendar td.on{
     background-color: #F3F1FA;
@@ -643,7 +649,12 @@
 }
 .calendar td strong{
     display: block;
+    width: 90%;
+    margin: 0 auto;
     color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .calendar td span{
     display: block;
@@ -750,10 +761,10 @@
         font-size: 3.333vw;
     }
     .calendar td small{
-        font-size: 2.222vw;
+        font-size: 7px;
     }
     .calendar td strong{
-        font-size: 2.222vw;
+        font-size: 8px;
     }
     .calendar td.on{
         border-radius: 4px;
@@ -894,7 +905,7 @@
     }
     .bt_buy{
         font-size: 18px;
-        padding: 4px 12px;
+        padding: 6px 24px;
     }
     
 }
@@ -2399,10 +2410,14 @@
         padding: 12px 0;
         width: 92%;
         margin: 0 auto;
+        overflow-y: scroll;
+    }
+    .mypage nav ul li:first-child{
+        margin-left: 0;
     }
     .mypage nav ul li{
-        width: 23%;
-        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 0;
         padding: 0;
     }
     .mypage nav ul li.active a{
@@ -2410,7 +2425,7 @@
     }
     .mypage nav ul li a{
         font-size: 14px;
-        padding: 8px 0;
+        padding: 8px 12px;
     }
     .mypage .user .wrap .left{
         padding: 30px 0;
@@ -2469,6 +2484,19 @@
     }
     .class_add2 .time span{
         font-size: 30px;
+    }
+    .mypage .m_ticket li{
+        width: 90%;
+        justify-content: start;
+    }
+    .mypage .m_ticket .st{
+        width: 50%;
+    }
+    .mypage .m_ticket .st small{
+        word-break: keep-all;
+    }
+    .mypage .m_ticket p{
+        white-space: nowrap;
     }
 }
 @media (max-width: 680px){
@@ -2936,7 +2964,7 @@
     .mypage .user table{
         font-size: 1rem;
     }
-    .mypage nav li.active{
+    .mypage nav li.active a{
         padding: 4px 8px;
     }
     .mypage nav li a{
@@ -2981,6 +3009,9 @@
     }
     .class_add td{
         border-radius: 8px;
+    }
+    .team .team-text h5{
+        font-size: 14px;
     }
 }
 .jumbotron{
@@ -3055,6 +3086,11 @@
         border-radius: 0;
     }
 }
+@media (max-width: 1200px){
+    .review_write select{
+        width: 100%;
+    }
+}
 @media (max-width: 768px){
     .t_my{
         flex-wrap: wrap;
@@ -3080,10 +3116,80 @@
         font-size: 16px;
         padding: 8px 0;
     }
+    .review_write .star span{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width: 580px){
+    .review_write{
+        padding: 1rem 0;
+    }
+    .review_write h3{
+        font-size: 32px;
+    }
+    .review_write .star{
+        margin-bottom: 24px;
+    }
+    .review_write .star span{
+        width: 40px;
+        height: 40px;
+    }
+    .review_write p{
+        font-size: 24px;
+        word-break: keep-all;
+    }
+    .review_write select{
+        font-size: 24px;
+        background-size: 18px;
+    }
+    .review_write .bt_box button{
+        width: 48%;
+        height: 60px;
+        font-size: 24px;
+    }
 }
 @media (max-width: 512px){
     .t_my .my_side a{
         font-size: 14px;
         padding: 4px 0;
     }
+}
+@media (max-width: 480px){
+    .review_write h3{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .review_write .star span{
+        width: 24px;
+        height: 24px;
+    }
+    .review_write p{
+        font-size: 18px;
+    }
+    .review_write select{
+        font-size: 18px;
+        padding: 8px 24px;
+        background-size: 14px;
+        margin-bottom: 24px;
+    }
+    .review_write .bt_box button{
+        height: 40px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+}
+.tcard{
+    pointer-events: none;
+}
+.tcard.sns_o{
+    pointer-events: all;
+}
+.team .team-text h5{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.popup.rw{
+    display: none;
 }
