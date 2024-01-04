@@ -14,7 +14,12 @@
     width: 54px;
     margin-left: 12px;
 }
-
+.logo_kim{
+    font-family: 'kim';
+}
+.logo_kim span{
+    font-family: 'kim2';
+}
 .schedule {
     width: 86%;
     margin: 0 auto;
