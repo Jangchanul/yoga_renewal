@@ -9683,7 +9683,7 @@ img {
   transition: .5s;
 }
 
-.team:hover .team-text {
+.team:hover.sns_o .team-text {
   bottom: 100px;
 }
 
@@ -9696,7 +9696,7 @@ img {
   transition: .5s;
 }
 
-.team:hover .team-social {
+.team:hover.sns_o .team-social {
   bottom: 0;
 }
 
