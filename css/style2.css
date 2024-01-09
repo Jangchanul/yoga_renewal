@@ -3504,16 +3504,10 @@
     }
 }
 .pw_c{
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 15px;
-    border: 1px solid #707070;
     width: 800px;
+    margin: 120px auto;
     background-color: #FFF;
-    padding: 60px 30px;
+    padding: 100px 30px;
     z-index: 10;
 }
 .pw_c .close{
@@ -3534,10 +3528,10 @@
 .pw_c table{
     width: 100%;
     border-collapse: separate;
-    border-spacing: 10px;
+    border-spacing: 20px;
 }
 .pw_c table th{
-    font-size: 24px;
+    font-size: 20px;
     padding: 12px 0;
     width: 30%;
     word-break: keep-all;
