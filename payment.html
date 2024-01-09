@@ -68,94 +68,71 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid mb-5 pr_h pr_h">
-        <img src="img/banner_price.png" alt="" class="h_bg">
-        <div class="container text-center py-3">
-            <h1 class="text-white mb-4">간편하게 시작해보세요.</h1>
-            <h1 class="text-white display-3">슬기로운 일상 요가생활</h1>
+    <section class="payment">
+        <div class="pay_box">
+            <h3>결제정보</h3>
+            <p>건강과 행복을 함께 만들어가는 <strong>요가조쿤</strong></p>
+            <table>
+                <tr>
+                    <th>구매자 정보</th>
+                    <td>홍길동</td>
+                </tr>
+                <tr>
+                    <th>선택이용권</th>
+                    <td>
+                        <div class="select">
+                            <div class="left">
+                                <figure><img src="img/ticket3.png" alt=""></figure>
+                                <figcaption>요가조쿤</figcaption>
+                                <p>1회권</p>
+                            </div>
+                            <div class="right">
+                                <small>사용기한 30일</small>
+                                <p><strong>50,000</strong>원</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <h3 class="text-uppercase font-weight-bold" style="margin-bottom: 3rem;">TICKET INFO</h3>
+        <div class="pay_box">
+            <h3>결제 수단</h3>
+            <div class="pay2_a">
+                <div class="flex1">
+                    <button type="button">
+                        <img src="img/pay1.png" alt="">
+                    </button>
+                    <button type="button">
+                        <img src="img/pay2.png" alt="">
+                    </button>
+                    <button type="button" class="toss">
+                        <img src="img/pay3.png" alt="">
+                    </button>
+                </div>
+                <div class="flex2">
+                    <button type="button">
+                        신용/체크카드
+                    </button>
+                    <button type="button">
+                        계좌이체
+                    </button>
+                </div>
+                <p>구매 전 <a href="refund.html">환불정책</a>을 확인하세요.</p>
             </div>
-            <div class="row price">
-                
-                <input type="radio" id="ra1" name="tic">
-                <label for="ra1">
-                    <div class="box">
-                        <div class="round">
-                            <img src="img/ticket.png" alt="">
-                            <span>요가조쿤</span>
-                            <p>1회권</p>
-                        </div>
-                        <small>사용기한 30일</small>
-                        <p><strong>50,000</strong>원</p>
-                    </div>
-                </label>
-                <input type="radio" id="ra2" name="tic">
-                <label for="ra2">
-                    <div class="box">
-                        <div class="round">
-                            <img src="img/ticket.png" alt="">
-                            <span>요가조쿤</span>
-                            <p>1회권</p>
-                        </div>
-                        <small>사용기한 45일</small>
-                        <p><strong>160,000</strong>원</p>
-                        <p class="sale">★첫 1회 무료★ <span>200,000원</span></p>
-                    </div>
-                </label>
-                <input type="radio" id="ra3" name="tic">
-                <label for="ra3">
-                    <div class="box">
-                        <div class="round">
-                            <img src="img/ticket.png" alt="">
-                            <span>요가조쿤</span>
-                            <p>1회권</p>
-                        </div>
-                        <small>사용기한 120일</small>
-                        <p><strong>320,000</strong>원</p>
-                        <p class="sale">★첫 1회 무료★ <span>400,000원</span></p>
-                    </div>
-                </label>
-                <input type="radio" id="ra4" name="tic">
-                <label for="ra4">
-                    <div class="box">
-                        <div class="round">
-                            <img src="img/ticket.png" alt="">
-                            <span>요가조쿤</span>
-                            <p>1회권</p>
-                        </div>
-                        <small>사용기한 240일</small>
-                        <p><strong>360,000</strong>원</p>
-                        <p class="sale">★첫 1회 무료★ <span>600,000원</span></p>
-                    </div>
-                </label>
+            <div class="pay2_a">
+                <button class="btn_l btn_pay" type="button">총 1장 ㅣ 50,000원 결제하기</button>
+                <button class="btn_l" type="button">취소</button>
             </div>
         </div>
-    </div>
-    <div class="pop_box buy">
+    </section>
+    <div class="pop_box buy_end">
         <div class="bg"></div>
         <div class="popup">
             <figure><img src="img/check-circle.png" alt=""></figure>
-            <figcaption>이용권 구매를 진행하시겠습니까?</figcaption>
-            <div class="bt_box">
-                <input type="button" value="확인" class="ok" onclick="location.href='payment.html'">
-                <input type="button" value="취소" class="no">
-            </div>
+            <figcaption>구매가 완료되었습니다.</figcaption>
+            <input type="button" value="확인" onclick="location.href='index.html'">
         </div>
     </div>
-    <!-- Pricing Plan End -->
-    <button class="bt_buy" type="button">이용권 구매하기</button>
-
     <!-- Footer Start -->
     <div class="footer container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="row ft_box">
@@ -194,11 +171,15 @@
     <script src="js/main.js"></script>
     <script>
         $(function(){
-            $(".bt_buy").click(function(){
-                $(".buy").fadeIn();
+            $(".pay2_a button").click(function(){
+                $(".pay2_a button").removeClass("on");
+                $(this).addClass("on");
             });
-            $(".no").click(function(){
-                $(".buy").fadeOut();
+            $(".btn_pay").click(function(){
+                $(".buy_end").fadeIn();
+            });
+            $(".buy_end").click(function(){
+                $("input").fadeOut();
             });
         });
     </script>
