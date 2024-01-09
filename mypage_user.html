@@ -96,6 +96,37 @@
         </div>
         <!-- Navbar End -->
 
+        <!-- 비밀번호 변경 팝업 -->
+        <div class="pw_c">
+            <button type="button" class="close"><img src="img/close.png" alt=""></button>
+            <h4>비밀번호 변경</h4>
+            <form onsubmit="return checkForm(this)">
+                <input type="hidden" name="_token" value="BKpRf7qVtRm6N5FCwbbSwNmBhjXL2nvzPyFT6mOv" style="display: none;">		
+                <input type="text" id="id" style="display: none;">
+                <input type="password" style="display: none;">
+                
+                <table>
+                    <tr>
+                        <th>기존 비밀번호</th>
+                        <td><input type="password" name="old_password" placeholder="기존 비밀번호를 입력하세요."></td>
+                    </tr>
+                    <tr>
+                        <th>변경 비밀번호</th>
+                        <td><input type="password" name="new_password1" placeholder="변경할 비밀번호를 입력하세요."></td>
+                    </tr>
+                    <tr>
+                        <th>변경 비밀번호 확인</th>
+                        <td><input type="password" name="new_password2" placeholder="변경할 비밀번호를 한 번 더 입력하세요."></td>
+                    </tr>
+                </table>
+                
+                <div style="padding:20px; text-align:center;">
+                    <input type="submit" class="btn_o" value="비밀번호 변경">
+                </div>
+            </form>
+        </div>
+        <!-- 비밀번호 변경 팝업 -->
+        
         <section class="mypage">
             <nav>
                 <ul>
@@ -248,6 +279,13 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            $(function(){
+                $(".close").click(function(){
+                    $(".pw_c").fadeOut();
+                });
+            });
+        </script>
     </body>
 
 </html>
