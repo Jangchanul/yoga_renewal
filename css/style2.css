@@ -3554,6 +3554,24 @@
     border-radius: 15px;
     padding: 12px 24px;
 }
+.btn_ae{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+}
+.btn_ae button{
+    background: #FFF;
+    border: 1px solid #E7E2F5;
+    font-size: 18px;
+    padding: 8px 24px;
+}
+.btn_ae .btn_edit{
+    background-color: #5B35B1;
+    color: #FFF;
+    border: 0;
+    margin-left: 12px;
+}
 @media (max-width: 992px){
     .pw_c{
         width: 92%;
@@ -3581,5 +3599,11 @@
     }
     .pw_c{
         padding: 24px 12px;
+    }
+    .btn_ae button{
+        background: #FFF;
+        border: 1px solid #E7E2F5;
+        font-size: 14px;
+        padding: 4px 12px;
     }
 }
